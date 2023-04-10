@@ -1,21 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native';
+import FullScreenVideoList from './FullScreenVideoList';
 
-export default function App() {
+const App = () => {
+  
+  const videoList = [
+    {
+      uri: 'https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4',
+    },
+    {
+      uri: 'https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4',
+    },
+    {
+      uri: 'https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4',
+    },
+  ];
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <FullScreenVideoList videoList={videoList} />
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;

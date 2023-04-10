@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "Video",
+    "slug": "Video",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
